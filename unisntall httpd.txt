@@ -1,0 +1,11 @@
+---
+- name: sample playbook to create file
+  hosts: all
+  become: true
+  tasks:
+  - name: creating file
+    file:
+     name: hero
+     state: touch
+
+

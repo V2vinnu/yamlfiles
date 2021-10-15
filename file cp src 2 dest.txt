@@ -1,0 +1,12 @@
+---
+- name: sample playbook for copy file from src to dest
+  hosts: all
+  become: true
+  tasks:
+  - name: copy file src 2 dest
+    copy:
+     src: /home/ansadmin/file.yml
+     dest: /home/ansadmin
+
+
+
